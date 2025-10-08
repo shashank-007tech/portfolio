@@ -5,30 +5,45 @@
     <title>Shashank's Portfolio</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Arial, sans-serif;
             margin: 0;
-            background: #f4f4f4;
+            background: linear-gradient(135deg, #f4f4f4 0%, #ffe3e3 100%);
             color: #333;
         }
         header {
-            background: #222;
+            background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
             color: #fff;
-            padding: 30px 0;
+            padding: 40px 0 20px 0;
             text-align: center;
+            position: relative;
+        }
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid #fff;
+            box-shadow: 0 4px 16px rgba(106,17,203,0.2);
+            position: absolute;
+            left: 50%;
+            top: 100%;
+            transform: translate(-50%, -50%);
+            background: #fff;
         }
         .container {
             max-width: 900px;
-            margin: 30px auto;
+            margin: 70px auto 30px auto;
             background: #fff;
             padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            border-radius: 16px;
+            box-shadow: 0 4px 24px rgba(37,117,252,0.08);
         }
         h2 {
-            color: #222;
-            border-bottom: 1px solid #eee;
+            color: #2575fc;
+            border-bottom: 2px solid #ffe3e3;
             padding-bottom: 8px;
             margin-bottom: 16px;
+            font-family: 'Segoe UI', Arial, sans-serif;
         }
         ul {
             list-style: none;
@@ -36,13 +51,39 @@
         }
         li {
             margin-bottom: 12px;
+            background: linear-gradient(90deg, #ffecd2 0%, #fcb69f 100%);
+            padding: 6px 12px;
+            border-radius: 6px;
+            color: #222;
+            font-weight: 500;
+            display: inline-block;
+            margin-right: 8px;
         }
         .project {
-            background: #f9f9f9;
-            padding: 15px;
-            border-radius: 5px;
-            margin-bottom: 15px;
-            box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+            background: linear-gradient(90deg, #f9f9f9 0%, #e0c3fc 100%);
+            padding: 18px;
+            border-radius: 10px;
+            margin-bottom: 18px;
+            box-shadow: 0 2px 8px rgba(37,117,252,0.05);
+            border-left: 6px solid #6a11cb;
+        }
+        a {
+            color: #6a11cb;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+            color: #2575fc;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 16px;
+            }
+            .profile-img {
+                width: 80px;
+                height: 80px;
+            }
         }
     </style>
 </head>
@@ -50,6 +91,8 @@
     <header>
         <h1>Shashank's Portfolio</h1>
         <p>Web Developer & Designer</p>
+        <!-- Replace the src below with your actual image path or URL -->
+        <img src="profile.jpg" alt="Shashank's Photo" class="profile-img">
     </header>
     <div class="container">
         <section>
@@ -72,7 +115,6 @@
             <div class="project">
                 <strong>Pick and Place Robot</strong><br>
                 A pick and place robot is an automated system designed to lift objects from one location and accurately place them in another. These robots are commonly used in manufacturing, packaging, warehousing, and assembly lines to increase efficiency, speed, and precision. They help reduce human labor in repetitive tasks and improve overall productivity and quality control in various industries. The basic functioning of a pick and place robot involves several key components a robotic am, an end effector
-
             </div>
             <div class="project">
                 <strong>Spotify clone</strong><br>
@@ -82,7 +124,7 @@
         <section>
             <h2>Contact</h2>
             <p>Email: shashankshashank9148@gmail.com</p>
-            <p>LinkedIn: <a href="www.linkedin.com/in/shashank-r-666673313" target="_blank">linkedin.com/in/shashank</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/shashank-r-666673313" target="_blank">linkedin.com/in/shashank</a></p>
         </section>
     </div>
 </body>
